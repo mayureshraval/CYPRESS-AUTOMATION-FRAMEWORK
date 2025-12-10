@@ -26,8 +26,8 @@ describe("Test Contact Us from via WebdriverUni",()=>{
             cy.get('input[type="submit"].contact_button').click()
         
       })
-
-    it("Should not be able to submit a successful submission via contact us form as all fields are required" ,()=>{
+      //used mocha only feature to run only the test mention the other way is commenting the code.
+    it.only("Should not be able to submit a successful submission via contact us form as all fields are required" ,()=>{
             // cyp code
              cy.visit({
                 url: "https://www.webdriveruniversity.com",
