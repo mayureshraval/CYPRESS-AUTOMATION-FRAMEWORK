@@ -8,15 +8,13 @@ describe("Test Contact Us from via WebdriverUni",()=>{
                 url: "https://www.webdriveruniversity.com",
                 method: "GET"
             })
-                //   1  cy.get('#contact-us').click()
-                //   1  cy.get('input[name="first_name"]').type('Mayuresh')
-
+              
             // Force same-tab navigation
             cy.get('#contact-us').invoke('removeAttr', 'target').click();
 
             // Now the input exists
-            cy.get('input[name="first_name"]', { timeout: 10000 }) //constantly checking for 10 secs if the form is slow to load 
-            .should('be.visible') //Element must not be display: none, Not hidden, behind another element, Not detached from DOM, Has non-zero width & height
+            cy.get('input[name="first_name"]', { timeout: 10000 }) 
+            .should('be.visible') 
             .type('Mayuresh');
 
             cy.get('input[name="last_name"]',{timeout: 10000}).should('be.visible').type('Rawal')
@@ -35,15 +33,13 @@ describe("Test Contact Us from via WebdriverUni",()=>{
                 url: "https://www.webdriveruniversity.com",
                 method: "GET"
             })
-                //   1  cy.get('#contact-us').click()
-                //   1  cy.get('input[name="first_name"]').type('Mayuresh')
 
             // Force same-tab navigation
             cy.get('#contact-us').invoke('removeAttr', 'target').click();
 
             // Now the input exists
-            cy.get('input[name="first_name"]', { timeout: 10000 }) //constantly checking for 10 secs if the form is slow to load 
-            .should('be.visible') //Element must not be display: none, Not hidden, behind another element, Not detached from DOM, Has non-zero width & height
+            cy.get('input[name="first_name"]', { timeout: 10000 }) 
+            .should('be.visible') 
             .type('Mayuresh');
 
             cy.get('input[name="last_name"]',{timeout: 10000}).should('be.visible').type('Rawal')
