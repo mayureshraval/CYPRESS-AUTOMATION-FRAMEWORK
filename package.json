@@ -9,9 +9,7 @@
   "author": "Mayuresh Rawal",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^15.7.1"
-  },
-  "dependencies": {
+    "cypress": "^15.7.1",
     "cypress-xpath": "^2.0.1"
   }
 }
